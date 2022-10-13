@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Expanding Cards</title>
+    <title>Notes App</title>
 </head>
 <body>
-    <div class="container">
-       <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-        <h3>Explore The World</h3>
-       </div>
+    <button class="add" id="add">
+        <i class="fas fa-plus"></i> Add Note
+    </button>
+
+    <div class="notes">
+        <div class="tools">
+            <button class="edit"><i class="fas fa-edit"></i></button>
+            <button class="delete"><i class="fas fa-trash-alt"></i></button>
+        </div> 
+        <div class="hidden"></div> 
+        <textarea></textarea>
+
     </div>
+   
     
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.1.1/marked.min.js" integrity="sha512-+mCmSlBpa1bF0npQzdpxFWIyJaFbVdEcuyET6FtmHmlXIacQjN/vQs1paCsMlVHHZ2ltD2VTHy3fLFhXQu0AMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
